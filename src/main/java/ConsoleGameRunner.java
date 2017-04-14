@@ -20,12 +20,10 @@ public class ConsoleGameRunner {
             if (!shouldExit && input != null && input.matches("^[rps]$")) {
                 String result = game.play(input);
                 System.out.println(result);
-                PlayerHistory playerHistory = game.getPlayerHistory();
-                logger.info("Total moves:" + playerHistory.getTotalMoves());
-                logger.info("Games computer win ratio:" + playerHistory.getComputerWinRatio() + "\n");
-                logger.info("Moves frequencies [R P S]:" + Arrays.toString(playerHistory.getFrequency()));
-                logger.info("Recent moves:" + playerHistory.getRecentPlayerMoves());
-                logger.info("Most frequent player's move:" + playerHistory.getMostFrequentMove());
+                PlayerHistoryProcessor playerHistoryProcessor = game.getPlayerHistoryProcessor();
+                logger.info("Total moves:" + playerHistoryProcessor.getTotalMoves());
+                logger.info("Games computer win ratio:" + playerHistoryProcessor.getComputerWinRatio() + "\n");
+                logger.info("Recent moves:" + playerHistoryProcessor.getRecentPlayerMoves());
                 System.out.println("==============================================");
             }
         } while (!shouldExit);
