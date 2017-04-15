@@ -13,10 +13,14 @@ e.g probability of ROCK after PAPER SCISSORS is other than ROCK after SCISSORS S
 
 3) Adjust ngram calculation to calculate top ngrams for multiple lengths
 
-Current win ratios against semi random user generated sequencesa:
+Current win ratios against semi random user generated sequences:
 
 Computer win rate 0.6000018461595267
+
 Computer win rate 0.5789416433616736
+
 Computer win rate 0.5892535714285714
+
 Computer win rate 0.6249937499553568
+
 Computer win rate 0.6110837447546102
