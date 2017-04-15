@@ -5,9 +5,9 @@ It also detects patterns and switches to prediction using top pattern if any.
 
 Things to improve:
 
-1)Calculate frequencies based on several moves in the past(only one previous move isused atm):
+1) Calculate frequencies based on several moves in the past(only one previous move isused atm)
 
-e.g probability of ROCK after PAPER SCISSORS is other than ROCK after SCISSORS SCISSORS
+    e.g probability of ROCK after PAPER SCISSORS is other than ROCK after SCISSORS SCISSORS
 
 2) Add corellation(recurrency) with previous frequencies.
 
